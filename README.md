@@ -5,7 +5,8 @@ To start this on your own
 1. clone the repo
 2. `cd streamlit_ocr`
 3. run `make install-deps`
-4. run `make start`
+4. 'pipenv shell'
+5. run `make start`
 
 This will open up a streamlit app on your local! Note, that once `make install-deps` is ran, we can run this *fully offline*. Furthermore, all uploaded files are saved on the local computer so once the initial dependcies are ran, this can be repeadtly used offline! 
 
