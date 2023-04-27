@@ -42,14 +42,6 @@ if len(paths) > 0:
         cols = st.columns(2)
         cols[0].image(Image.open(p))
         cols[1].text(get_txt_from_img(p))
-    for p in paths:
-        print(p)
-        results.append(get_txt_from_img(p))
-        print(results)
-    df = pd.DataFrame(results)
-    st.table(df)
-
-
 
 else:
     st.write("Upload some files first!")
