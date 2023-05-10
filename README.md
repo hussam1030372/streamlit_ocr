@@ -1,5 +1,10 @@
 # OCR 
 
+## Demo
+Live Site: https://abdullahridwan-streamlit-ocr-home-ms9hnm.streamlit.app
+Check out the website above to use tesseract ocr!
+
+## Info
 For this quick mvp, we combine tesseract with streamlit. Tesseract is an opensource OCR that can be used to extract text from images. 
 To start this on your own
 1. clone the repo
