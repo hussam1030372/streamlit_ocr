@@ -10,7 +10,7 @@ paths = []
 
 st.write("## 1. Upload your Files")
 with st.form(key="Form :", clear_on_submit = True):
-    files = st.file_uploader(label = "Upload file", type=["png","jpeg"], accept_multiple_files=True)
+    files = st.file_uploader(label = "Upload file", type=["png","jpeg","pdf"], accept_multiple_files=True)
     Submit = st.form_submit_button(label='Submit')
 
 
