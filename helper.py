@@ -9,7 +9,7 @@ def get_txt_from_img(img_name):
     }
 
     files = {
-       'file': Image.open(img_name),
+       'file': open(img_name, 'rb'),
     }
 
     response = requests.post('http://54.147.188.222:8090/detect_text', headers=headers, files=files)
