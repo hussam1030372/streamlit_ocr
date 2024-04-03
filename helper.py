@@ -16,6 +16,9 @@ def get_txt_from_img(img_name):
     response = requests.post('http://54.147.188.222:8090/detect_text', headers=headers, files=files)
 
     arabic_text = json.loads(response.text)["result"]
-    decoded_text = bytes(arabic_text, 'utf-8').decode('unicode_escape')
+
+    # Decode Unicode escape sequences
+    decoded_text = bytes(arabic_text, 'utf-8').decode('unicode_escape').encode('latin1').decode('utf-8')
+
 
     return decoded_text
